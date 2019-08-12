@@ -1,0 +1,95 @@
+*{padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.window{
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #eee
+}
+.wrapper{
+  left: -300px;
+  height: 50px;
+  width: 100px;
+  position: relative;}
+
+#BoxSwitch{
+position: absolute;
+height: 50px;
+width: 100px;
+background-color: red;
+  }
+#popover{
+
+  position: absolute;
+  left: 150px;
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  border-radius: 50%;
+  overflow: hidden;   
+  animation: x 10s infinite linear;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  display: none
+}
+@keyframes x{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(306deg)
+  }
+}
+#popover>div:first-child{
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  position: absolute;
+
+}
+
+#popover>div:nth-child(2){
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  background-color: white;
+  position: absolute;
+}
+#popover>div:nth-child(3){
+  height: 50%;
+  width: 50%;
+  left: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+#popover>div:nth-child(4){
+  height: 50%;
+  width: 50%;
+  left: 100px;
+  border-radius: 50%;
+  background-color:white;
+  position: absolute;
+  top: 200px
+}
+#popover>div:nth-child(5){
+  height: 15%;
+  width: 15%;
+  left: 170px;
+  border-radius: 50%;
+  background-color:white;
+  position: absolute;
+  top: 70px
+}
+#popover>div:nth-child(6){
+  height: 15%;
+  width: 15%;
+  left: 170px;
+  border-radius: 50%;
+  background-color:black;
+  position: absolute;
+  bottom: 70px
+}
