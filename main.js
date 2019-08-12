@@ -9,6 +9,7 @@ $box.addEventListener('mousedown', (e) => {
     dragging = true
     X = e.clientX
     Y = e.clientY
+    ButtonSwitch = false
 })
 document.addEventListener('mousemove', (e) => {
     let moveX = e.clientX - X
@@ -22,6 +23,7 @@ document.addEventListener('mousemove', (e) => {
 
 document.addEventListener('mouseup', () => {
     dragging = false
+    ButtonSwitch = true
 })
 
 
