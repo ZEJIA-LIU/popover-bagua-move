@@ -20,6 +20,7 @@
 position: absolute;
 height: 50px;
 width: 100px;
+z-index: 1;
 
   }
 #popover{
@@ -40,7 +41,7 @@ width: 100px;
     transform: rotate(0deg)
   }
   to{
-    transform: rotate(306deg)
+    transform: rotate(360deg)
   }
 }
 #popover>div:first-child{
@@ -48,9 +49,7 @@ width: 100px;
   width: 50%;
   background-color: black;
   position: absolute;
-
 }
-
 #popover>div:nth-child(2){
   height: 100%;
   width: 50%;
